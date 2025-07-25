@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
+    "./src/**/*.{js,jsx,ts,tsx,html}",
     "./index.html",
-    "./src/**/*.{js,jsx}",
+    "./index.css"
   ],
   theme: {
     extend: {
@@ -45,7 +46,7 @@ export default {
         }
       },
       fontFamily: {
-        'mono': ['JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'monospace'],
+        mono: ['JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'monospace'],
       },
       animation: {
         'pulse-success': 'pulse 1s ease-in-out infinite',
@@ -65,7 +66,7 @@ export default {
           '100%': { transform: 'scale(1)', opacity: '1' },
         }
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }
